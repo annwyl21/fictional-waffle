@@ -26,3 +26,25 @@ if __name__ == '__main__':
 
 #but I can only get
 'Harry' and '37.21'
+
+#I ended up cheating and solving it by editing the given starter code to create my dictionary and list outside the loop...
+if __name__ == '__main__':
+    student_list = {}
+    scores = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        student_list[name] = score
+        scores.append(score)
+
+scores = list(set(scores))
+scores.sort()
+second_lowest_score = scores[1]
+
+list = []
+for key, value in student_list.items():
+    if value == second_lowest_score:
+        list.append(key) # names of students with 2nd lowest score
+list.sort()
+for item in list:
+    print(item) # names printed sorted alphabetically on newlines

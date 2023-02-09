@@ -13,6 +13,8 @@ for number in range(int(num)):
     student_list[name] = score
     scores.append(score)
 
+scores = list(set(scores))
+print(scores)
 scores.sort()
 second_lowest_score = scores[1]
 
