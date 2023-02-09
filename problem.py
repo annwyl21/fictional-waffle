@@ -2,7 +2,7 @@ if __name__ == '__main__':
     for _ in range(int(input())):
         name = input()
         score = float(input())
-)
+#)
 
 # that is the given code starter, i can tell it is part of a bigger structure because it has a random ) floating at the bottom.
 # But this is supposed to be the simple, 'we have given you the code for the input now grab the data and start coding'
