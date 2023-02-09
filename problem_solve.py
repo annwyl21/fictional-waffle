@@ -1,4 +1,4 @@
-#I can solve it if I have the data...
+#I can create a nested list if I have the data...
 
 data = "5 Harry 37.21 Berry 37.21 Tina 37.2 Akriti 41 Harsh 39"
 
@@ -14,4 +14,4 @@ for number in range(int(num)):
     student.append(score)
     student_list.append(student)
 
-print(student_list)
+print(student_list) # created nested list
