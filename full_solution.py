@@ -15,10 +15,13 @@ for number in range(int(num)):
 
 scores.sort()
 second_lowest_score = scores[1]
-print(second_lowest_score)
 
+list = []
 for key, value in student_list.items():
     if value == second_lowest_score:
-        print(key) # print 2 students with 2nd lowest score
+        list.append(key) # names of students with 2nd lowest score
+list.sort()
+for item in list:
+    print(item) # names printed sorted alaphabetically on newlines
 
-print(student_list) # created nested list
+print("And the nested list:", student_list) # created nested list
